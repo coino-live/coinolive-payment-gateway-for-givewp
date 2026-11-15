@@ -1,0 +1,219 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: pt_PT\n"
+"X-Domain: coinolive-give\n"
+
+msgid "Coino Live Crypto Donations needs GiveWP 3 or newer to be installed and active."
+msgstr "O Coino Live Doações em Cripto precisa do GiveWP 3 ou mais recente instalado e ativo."
+
+msgid "Settings"
+msgstr "Configurações"
+
+msgid "Dashboard"
+msgstr "Painel"
+
+msgid "Every five minutes"
+msgstr "A cada cinco minutos"
+
+msgid "Coino Live"
+msgstr "Coino Live"
+
+msgid "Sorry, you are not allowed to access this page."
+msgstr "Não tem permissão para aceder a esta página."
+
+msgid "Open Coino Live dashboard"
+msgstr "Abrir o painel do Coino Live"
+
+msgid "Add your Coino Live API key to see your balance and payments here."
+msgstr "Adicione a sua chave de API do Coino Live para ver aqui o seu saldo e pagamentos."
+
+msgid "Balance"
+msgstr "Saldo"
+
+msgid "Total"
+msgstr "Total"
+
+msgid "Withdraw"
+msgstr "Levantar"
+
+msgid "Your whole Coino Live account (all gateways), after fees. Withdraw from the Coino Live dashboard."
+msgstr "Toda a sua conta Coino Live (todos os gateways), após as taxas. Os levantamentos fazem-se no painel do Coino Live."
+
+msgid "No balance yet. Paid donations are added here after fees."
+msgstr "Ainda sem saldo. Os donativos pagos são adicionados aqui após as taxas."
+
+msgid "Payments"
+msgstr "Pagamentos"
+
+msgid "All"
+msgstr "Todos"
+
+msgid "Donation number"
+msgstr "Número do donativo"
+
+msgid "Search"
+msgstr "Pesquisar"
+
+msgid "Date"
+msgstr "Data"
+
+msgid "Order"
+msgstr "Encomenda"
+
+msgid "Status"
+msgstr "Estado"
+
+msgid "Amount"
+msgstr "Valor"
+
+msgid "Received"
+msgstr "Recebido"
+
+msgid "Transactions"
+msgstr "Transações"
+
+msgid "No payments found."
+msgstr "Nenhum pagamento encontrado."
+
+msgid "Newer"
+msgstr "Mais recentes"
+
+msgid "Older"
+msgstr "Mais antigos"
+
+msgid "%s USD missing"
+msgstr "Faltam %s USD"
+
+msgid "Payment page"
+msgstr "Página de pagamento"
+
+msgid "Paid"
+msgstr "Pago"
+
+msgid "Partially paid"
+msgstr "Pago parcialmente"
+
+msgid "Confirming"
+msgstr "A confirmar"
+
+msgid "Waiting for payment"
+msgstr "A aguardar pagamento"
+
+msgid "Expired"
+msgstr "Expirado"
+
+msgid "Cancelled"
+msgstr "Cancelado"
+
+msgid "Could not load from Coino Live: %s"
+msgstr "Não foi possível carregar do Coino Live: %s"
+
+msgid "The Coino Live API key is not set."
+msgstr "A chave de API do Coino Live não foi definida."
+
+msgid "Could not reach Coino Live: %s"
+msgstr "Não foi possível conectar ao Coino Live: %s"
+
+msgid "There is no Coino Live API at %1$s (HTTP %2$d). Check the API URL setting."
+msgstr "Não existe uma API do Coino Live em %1$s (HTTP %2$d). Verifique a definição do URL da API."
+
+msgid "Unexpected answer from Coino Live."
+msgstr "Resposta inesperada do Coino Live."
+
+msgid "Coino Live (crypto)"
+msgstr "Coino Live (cripto)"
+
+msgid "Donate with crypto"
+msgstr "Doar com cripto"
+
+msgid "Donate with USDT, Bitcoin, Ethereum, TRON, TON, Solana and more. You will be taken to a secure payment page."
+msgstr "Doe com USDT, Bitcoin, Ethereum, TRON, TON, Solana e mais. Será encaminhado para uma página de pagamento segura."
+
+msgid "Crypto donations are not set up yet. Please choose another payment method."
+msgstr "Os donativos em cripto ainda não estão configurados. Escolha outro método de pagamento."
+
+msgid "Crypto donations are not available right now: %s"
+msgstr "Os donativos em cripto não estão disponíveis agora: %s"
+
+msgid "Crypto donations are refunded from the Coino Live dashboard."
+msgstr "Os donativos em cripto são reembolsados no painel da Coino Live."
+
+msgid "Donation #%1$s to %2$s"
+msgstr "Donativo #%1$s para %2$s"
+
+msgid "Coino Live returned a payment that does not belong to this donation. Please try again."
+msgstr "A Coino Live devolveu um pagamento que não pertence a este donativo. Tente novamente."
+
+msgid "Coino Live payment %1$s created (%2$s USD). Waiting for the donor to pay."
+msgstr "Pagamento Coino Live %1$s criado (%2$s USD). A aguardar o pagamento do doador."
+
+msgid "Another Coino Live payment (%1$s) was paid for this donation: %2$s."
+msgstr "Outro pagamento Coino Live (%1$s) foi pago para este donativo: %2$s."
+
+msgid "Coino Live payment is paid but was for %1$s, the donation is %2$s. Please check."
+msgstr "O pagamento Coino Live foi pago, mas era de %1$s e o donativo é de %2$s. Verifique."
+
+msgid "Coino Live payment %1$s confirmed: %2$s"
+msgstr "Pagamento Coino Live %1$s confirmado: %2$s"
+
+msgid "Coino Live: the payment was sent and is waiting for network confirmations."
+msgstr "Coino Live: o pagamento foi enviado e aguarda confirmações da rede."
+
+msgid "Coino Live: only %1$s of %2$s USD received so far. The donor was asked to send the rest."
+msgstr "Coino Live: apenas %1$s de %2$s USD recebidos até agora. Foi pedido ao doador que envie o restante."
+
+msgid "Coino Live: the payment closed with %1$s of %2$s USD received (in your Coino Live balance)."
+msgstr "Coino Live: o pagamento terminou com %1$s de %2$s USD recebidos (no seu saldo Coino Live)."
+
+msgid "Coino Live: the payment window closed without payment."
+msgstr "Coino Live: o prazo de pagamento terminou sem pagamento."
+
+msgid "API key"
+msgstr "Chave de API"
+
+msgid "Create one in your Coino Live dashboard under Developers. Keys start with ck_live_ (or ck_test_ on the test network)."
+msgstr "Crie uma no painel do Coino Live, em Desenvolvedores. As chaves começam com ck_live_ (ou ck_test_ na rede de teste)."
+
+msgid "Webhook signing secret (optional)"
+msgstr "Segredo de assinatura do webhook (opcional)"
+
+msgid "From your gateway settings (whsec_…). When set, webhooks with a wrong signature are refused. Donations are always checked against the API before they change, so this is an extra layer."
+msgstr "Nas definições do seu gateway (whsec_…). Quando definido, os webhooks com assinatura errada são recusados. Os donativos são sempre verificados na API antes de mudarem, por isso esta é uma camada extra."
+
+msgid "Payment window (minutes)"
+msgstr "Prazo de pagamento (minutos)"
+
+msgid "How long the donor has to send the payment. Between 15 and 10080."
+msgstr "Quanto tempo o doador tem para enviar o pagamento. Entre 15 e 10080."
+
+msgid "API URL"
+msgstr "URL da API"
+
+msgid "Leave as is unless Coino Live support tells you otherwise."
+msgstr "Não altere, a menos que o suporte do Coino Live peça."
+
+msgid "Add your API key below and save."
+msgstr "Adicione a sua chave de API abaixo e guarde."
+
+msgid "The API URL must start with https://."
+msgstr "A URL da API deve começar com https://."
+
+msgid "Connected, but Coino Live cannot price payments in %s yet."
+msgstr "Ligado, mas a Coino Live ainda não aceita pagamentos em %s."
+
+msgid "Connected to Coino Live."
+msgstr "Conectado ao Coino Live."
+
+msgid "Webhook URL (sent with every payment, nothing to configure):"
+msgstr "URL do webhook (enviado com cada pagamento, nada a configurar):"
+
+msgid "Coino Live refused the API key: %s"
+msgstr "O Coino Live recusou a chave de API: %s"
+
+msgid "Coino Live Crypto Donations for GiveWP"
+msgstr "Coino Live Doações em Cripto para GiveWP"
+
+msgid "Accept donations in USDT, Bitcoin, Ethereum, TRON, TON, Solana and more with GiveWP. Donors pay on the Coino Live checkout; donations update automatically."
+msgstr "Receba donativos em USDT, Bitcoin, Ethereum, TRON, TON, Solana e mais com o GiveWP. Os doadores pagam na página da Coino Live; os donativos são atualizados automaticamente."
+
