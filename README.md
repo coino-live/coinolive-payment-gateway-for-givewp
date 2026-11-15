@@ -1,32 +1,58 @@
-# Coino Live crypto donations for GiveWP
+# Coino Live Crypto Donation Plugin for GiveWP (WordPress)
 
-Accept donations in USDT, Bitcoin, Ethereum, TRON, TON, Solana and more with GiveWP.
+Accept crypto donations in USDT, USDC, Bitcoin, Ethereum, Litecoin, TRON, TON, Solana and more on your GiveWP donation forms. This free, open-source WordPress plugin connects GiveWP to [Coino Live](https://coino.live), a crypto payment gateway. Donations are credited to your Coino Live balance, and you withdraw them to your own wallet.
 
-**Version 1.0.0** · requires GiveWP 3+, WordPress 6.6+, PHP 7.4+
+**Version 1.0.0** · Requires GiveWP 3+, WordPress 6.6+, PHP 7.4+ · License: GPL-2.0-or-later
 
-- Download the ready-to-install zip: [coinolive-give-1.0.0.zip](https://coino.live/downloads/coinolive-give-1.0.0.zip)
-- API reference: [coino.live/api-guide](https://coino.live/api-guide) · Support: [support@coino.live](mailto:support@coino.live)
+- **Download** the ready-to-install zip: [coinolive-give-1.0.0.zip](https://coino.live/downloads/coinolive-give-1.0.0.zip)
+- **API reference:** [coino.live/api-guide](https://coino.live/api-guide)
+- **Support:** [support@coino.live](mailto:support@coino.live)
 
-## Description
+## Features
 
-Donors choose "Donate with crypto" on your GiveWP form (visual form builder or classic forms), pick a coin and network on the Coino Live payment page and send the amount shown. The donation updates by itself:
+- **117 assets on 11 networks:** Bitcoin, Litecoin, Ethereum, BNB Smart Chain, opBNB, Polygon, Base, Arbitrum, TRON, TON and Solana. USDT and USDC are available on most of them. Dogecoin and Bitcoin Cash are not accepted.
+- **Fees:** the plugin is free. Coino Live charges a 0.25% platform fee per payment. Blockchain network fees are separate.
+- **No KYC:** sign up at [coino.live](https://coino.live) with an email and password.
+- **Withdraw to your own wallet:** donations are credited to your Coino Live balance, and you withdraw them from the Coino Live dashboard.
+- **Currency conversion:** amounts in your GiveWP currency (USD, EUR, GBP, TRY, BRL, RUB and more) are converted at the current rate.
+- **Works with both form types:** the GiveWP visual form builder and classic forms.
+- **API-verified status:** donation status always comes from the Coino Live API, never from the content of a webhook.
 
-- **Processing** as soon as the payment is seen on the network (or if only part arrived, with a note),
-- **Complete** once it is confirmed: GiveWP sends the donation receipt as usual,
-- **Failed** if the payment window closes unpaid.
+## How crypto donations work
 
-Donations are credited to your Coino Live balance; withdraw to your own wallet from the Coino Live dashboard. Donations > Coino Live shows your balance and every payment with its transactions.
+1. The donor chooses **"Donate with crypto"** on your GiveWP form.
+2. On the Coino Live payment page, the donor picks a coin and network and sends the amount shown.
+3. The donation status updates automatically:
+   - **Processing** as soon as the payment is seen on the network. If only part of the amount arrived, the status is also Processing and a note is added.
+   - **Complete** once the payment is confirmed. GiveWP sends the donation receipt as usual.
+   - **Failed** if the payment window closes unpaid.
 
-- Amounts in your GiveWP currency (USD, EUR, GBP, TRY, BRL, RUB and more) are converted at the current rate.
-- Secure by design: donation status always comes from the Coino Live API, never from the content of a webhook.
+Open **Donations > Coino Live** to see your balance and every payment with its transactions.
 
 ## Installation
 
-1. Upload the plugin (Plugins > Add New > Upload Plugin) and activate it. GiveWP 3 or newer must be active.
-2. In your Coino Live dashboard, open Developers and create an API key for your gateway.
-3. Donations > Settings > Payment Gateways: open "Coino Live (crypto)", paste the key and save (the page confirms the connection), then enable the gateway under "Gateways" and on your forms.
+1. Upload the plugin (**Plugins > Add New > Upload Plugin**) and activate it. GiveWP 3 or newer must be active.
+2. Sign up at [coino.live](https://coino.live) with an email and password if you do not have an account yet.
+3. In your Coino Live dashboard, open **Developers** and create an API key for your gateway.
+4. Go to **Donations > Settings > Payment Gateways** and open **"Coino Live (crypto)"**.
+5. Paste the API key and save. The page confirms the connection.
+6. Enable the gateway under **"Gateways"** and on your forms.
 
-Nothing else to configure: the webhook URL is sent with every payment. If webhooks cannot reach your site, open donations are still checked every five minutes and when the donor returns.
+There is nothing else to configure: the webhook URL is sent with every payment. If webhooks cannot reach your site, open donations are still checked every five minutes and when the donor returns.
+
+## FAQ
+
+**Which cryptocurrencies can donors use?**  
+117 assets on Bitcoin, Litecoin, Ethereum, BNB Smart Chain, opBNB, Polygon, Base, Arbitrum, TRON, TON and Solana, including USDT and USDC on most of these networks. Dogecoin and Bitcoin Cash are not accepted.
+
+**What does it cost?**  
+The plugin is free. Coino Live charges a 0.25% platform fee per payment. Blockchain network fees are separate.
+
+**Do I need to complete KYC?**  
+No. You sign up for Coino Live with an email and password.
+
+**Where do the donations go?**  
+They are credited to your Coino Live balance. You withdraw them to your own wallet from the Coino Live dashboard.
 
 ## Changelog
 
