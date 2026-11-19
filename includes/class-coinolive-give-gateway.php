@@ -56,7 +56,7 @@ class CoinoLive_Give_Gateway extends PaymentGateway {
 	/** Creates (or reuses) the Coino Live payment and sends the donor to it. */
 	public function createPayment( Donation $donation, $gatewayData ) {
 		if ( '' === trim( (string) CoinoLive_Give_Payments::option( 'api_key' ) ) ) {
-			throw new PaymentGatewayException( __( 'Crypto donations are not set up yet. Please choose another payment method.', 'coinolive-give' ) );
+			throw new PaymentGatewayException( esc_html__( 'Crypto donations are not set up yet. Please choose another payment method.', 'coinolive-give' ) );
 		}
 
 		$success = (string) ( $gatewayData['successUrl'] ?? '' );
@@ -81,14 +81,14 @@ class CoinoLive_Give_Gateway extends PaymentGateway {
 			$payment = CoinoLive_Give_Payments::payment_for( $donation, $return );
 		} catch ( CoinoLive_Give_Exception $e ) {
 			/* translators: %s: error message */
-			throw new PaymentGatewayException( sprintf( __( 'Crypto donations are not available right now: %s', 'coinolive-give' ), $e->getMessage() ) );
+			throw new PaymentGatewayException( sprintf( esc_html__( 'Crypto donations are not available right now: %s', 'coinolive-give' ), wp_kses( $e->getMessage(), array() ) ) );
 		}
 
 		return new RedirectOffsite( in_array( $payment['status'], array( 'paid', 'confirming' ), true ) ? $success : $payment['checkout_url'] );
 	}
 
 	public function refundDonation( Donation $donation ) {
-		throw new PaymentGatewayException( __( 'Crypto donations are refunded from the Coino Live dashboard.', 'coinolive-give' ) );
+		throw new PaymentGatewayException( esc_html__( 'Crypto donations are refunded from the Coino Live dashboard.', 'coinolive-give' ) );
 	}
 
 	/** Back from the payment page: re-check, then the receipt (paid or on its way) or the form (not paid). */

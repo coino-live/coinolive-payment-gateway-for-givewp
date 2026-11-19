@@ -252,7 +252,7 @@ class CoinoLive_Give_Admin {
 
 	private static function error( CoinoLive_Give_Exception $e ) {
 		/* translators: %s: error message */
-		echo '<div class="notice notice-error inline"><p>' . esc_html( sprintf( __( 'Could not load from Coino Live: %s', 'coinolive-give' ), $e->getMessage() ) ) . '</p></div>';
+		echo '<div class="notice notice-error inline"><p>' . sprintf( esc_html__( 'Could not load from Coino Live: %s', 'coinolive-give' ), wp_kses( $e->getMessage(), array() ) ) . '</p></div>';
 	}
 
 	/** Decimal strings without floats (bcmath is not always installed). */

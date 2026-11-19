@@ -2,9 +2,9 @@
 
 Accept crypto donations in USDT, USDC, Bitcoin, Ethereum, Litecoin, TRON, TON, Solana and more on your GiveWP donation forms. This free, open-source WordPress plugin connects GiveWP to [Coino Live](https://coino.live), a crypto payment gateway. Donations are credited to your Coino Live balance, and you withdraw them to your own wallet.
 
-**Version 1.0.0** · Requires GiveWP 3+, WordPress 6.6+, PHP 7.4+ · License: GPL-2.0-or-later
+**Version 1.0.1** · Requires GiveWP 3+, WordPress 6.6+, PHP 7.4+ · License: GPL-2.0-or-later
 
-- **Download** the ready-to-install zip: [coinolive-give-1.0.0.zip](https://coino.live/downloads/coinolive-give-1.0.0.zip)
+- **Download** the ready-to-install zip: [coinolive-give-1.0.1.zip](https://coino.live/downloads/coinolive-give-1.0.1.zip)
 - **API reference:** [coino.live/api-guide](https://coino.live/api-guide)
 - **Support:** [support@coino.live](mailto:support@coino.live)
 
@@ -55,6 +55,14 @@ No. You sign up for Coino Live with an email and password.
 They are credited to your Coino Live balance. You withdraw them to your own wallet from the Coino Live dashboard.
 
 ## Changelog
+
+### 1.0.1
+- Tested with WordPress 7.1.
+- Error messages are escaped where they are created.
+- The readme lists what the plugin sends to the Coino Live API (External services).
+- Plugin URI points to the plugins section of the Coino Live API guide.
+- Translations load on init; the WordPress.org package gets them from translate.wordpress.org.
+- A website address entered as the API URL now gives a clear error instead of an empty one.
 
 ### 1.0.0
 - First release for Coino Live API v2.

@@ -1,9 +1,9 @@
 <?php
 /**
  * Plugin Name:       Coino Live Crypto Donations for GiveWP
- * Plugin URI:        https://coino.live/plugins
+ * Plugin URI:        https://coino.live/api-guide#integrations
  * Description:       Accept donations in USDT, Bitcoin, Ethereum, TRON, TON, Solana and more with GiveWP. Donors pay on the Coino Live checkout; donations update automatically.
- * Version:           1.0.0
+ * Version:           1.0.1
  * Author:            Coino Live
  * Author URI:        https://coino.live
  * License:           GPL-2.0-or-later
@@ -17,16 +17,19 @@
 
 defined( 'ABSPATH' ) || exit;
 
-define( 'COINOLIVE_GIVE_VERSION', '1.0.0' );
+define( 'COINOLIVE_GIVE_VERSION', '1.0.1' );
 define( 'COINOLIVE_GIVE_FILE', __FILE__ );
 define( 'COINOLIVE_GIVE_DIR', plugin_dir_path( __FILE__ ) );
 define( 'COINOLIVE_GIVE_URL', plugin_dir_url( __FILE__ ) );
 
+// Only in the download from coino.live (see the file); WordPress.org delivers translations itself.
+if ( is_readable( COINOLIVE_GIVE_DIR . 'includes/bundled-translations.php' ) ) {
+	require_once COINOLIVE_GIVE_DIR . 'includes/bundled-translations.php';
+}
+
 add_action(
 	'plugins_loaded',
 	static function () {
-		load_plugin_textdomain( 'coinolive-give', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
-
 		if ( ! class_exists( '\Give\Framework\PaymentGateways\PaymentGateway' ) ) {
 			add_action(
 				'admin_notices',

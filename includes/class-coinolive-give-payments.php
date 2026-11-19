@@ -118,7 +118,7 @@ class CoinoLive_Give_Payments {
 
 		$payment = $client->create_payment( $data, $key );
 		if ( (string) ( $payment['metadata']['give_donation_id'] ?? '' ) !== (string) $id || 'open' !== $payment['status'] ) {
-			throw new CoinoLive_Give_Exception( __( 'Coino Live returned a payment that does not belong to this donation. Please try again.', 'coinolive-give' ) );
+			throw new CoinoLive_Give_Exception( esc_html__( 'Coino Live returned a payment that does not belong to this donation. Please try again.', 'coinolive-give' ) );
 		}
 
 		$all   = (array) give_get_meta( $id, self::META_PAYMENTS, true );
@@ -316,7 +316,7 @@ class CoinoLive_Give_Payments {
 			return '<span style="color:#008a20">' . esc_html__( 'Connected to Coino Live.', 'coinolive-give' ) . '</span> ' . esc_html__( 'Webhook URL (sent with every payment, nothing to configure):', 'coinolive-give' ) . ' <code>' . esc_html( CoinoLive_Give_Gateway::webhook_url() ) . '</code>';
 		} catch ( CoinoLive_Give_Exception $e ) {
 			/* translators: %s: error message */
-			return '<span style="color:#b32d2e">' . esc_html( sprintf( __( 'Coino Live refused the API key: %s', 'coinolive-give' ), $e->getMessage() ) ) . '</span>';
+			return '<span style="color:#b32d2e">' . sprintf( esc_html__( 'Coino Live refused the API key: %s', 'coinolive-give' ), wp_kses( $e->getMessage(), array() ) ) . '</span>';
 		}
 	}
 
